@@ -14,7 +14,7 @@ function CarsList(props: any) {
   }, [props.carsList]);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-2 md:grid-cols-3">
       {!isLoaded &&
         props.carsList.map((car: any, index: number) => (
           <div

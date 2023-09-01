@@ -14,7 +14,7 @@ function CarCard(props: any) {
 
   return (
     car && (
-      <div className="group bg-gray-50 p-2 sm:p-5 rounded-3xl m-1 sm:m-5 hover:bg-white hover:border-[1px] cursor-pointer duration-200 border-blue-500 ">
+      <div className="group bg-gray-50 p-2 sm:p-5 rounded-3xl m-1 sm:m-5 hover:bg-white border-2 cursor-pointer hover:border-blue-500 transition-all ease-in-out">
         <h2 className="text-[20px] font-medium mb-2">{car.name}</h2>
         <h2 className="text-[28px] font-bold mb-2">
           <span className="text-[12px] font-light">$ </span>
@@ -25,7 +25,7 @@ function CarCard(props: any) {
           <img
             src={car?.image?.url}
             alt=""
-            className="h-[200px] w-[300px] object-cover mb-3"
+            className="h-[300px] w-[600px] object-cover mb-3"
           />
         </div>
         <div className="flex justify-around group-hover:hidden">
@@ -48,11 +48,7 @@ function CarCard(props: any) {
             </h2>
           </div>
         </div>
-        <button
-          className="hidden group-hover:flex bg-gradient-to-r
-     from-blue-400 to-blue-700
-    p-2 rounded-lg text-white w-full px-5 justify-between"
-        >
+        <button className="hidden group-hover:flex bg-gradient-to-r from-blue-400 to-blue-700 p-3 rounded-lg text-white text-[1.1rem] w-full px-5 justify-between">
           Rent Now
           <span className="bg-blue-400 p-1 rounded-md ">
             <svg
